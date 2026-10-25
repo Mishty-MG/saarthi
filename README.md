@@ -81,3 +81,19 @@ Additional documentation will be added as development progresses.
 ## Disclaimer
 
 Saarthi is an experimental assistive-technology project. Features, specifications, and implementation plans may change as development and testing continue. No claim of reliable independent navigation or real-world safety is made at this stage.
+
+## Current Prototype
+
+The current local prototype includes:
+
+- **Image-based OCR:** extracts text from a saved image using OpenCV and Tesseract.
+- **Live-camera OCR:** captures a camera frame and extracts text when the user presses Space.
+- **Experimental arrow-direction detection:** estimates the direction of large, high-contrast shapes using OpenCV. Recognition is not yet reliable enough for navigation use.
+- **Text-to-speech code:** integrated into the saved-image reader, but audio output has not yet been verified.
+
+### Current Limitations
+
+- Camera OCR depends on image quality, lighting, distance, and text size.
+- Arrow detection may misclassify objects and needs further testing.
+- Full navigation, obstacle avoidance, and hardware integration are not yet implemented.
+- This prototype is experimental and must not be used as a replacement for a white cane or established mobility aids.
